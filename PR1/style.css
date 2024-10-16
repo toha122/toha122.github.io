@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #619bff, #fbc8ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.form-container, .blue-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.phone-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.phone-input select {
+    width: 30%;
+}
+
+.phone-input input {
+    width: 70%;
+}
+.password-hint {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #132666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.login-link a {
+    color: #132666;
+    text-decoration: none;
+}
+.blue-form {
+    background-color: #132666;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+}
+.blue-form-nav {
+    position: absolute;
+    top: 30px; left: 400px;
+}
+.blue-form-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.blue-form-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    
+}
+.blue-form-text {
+    font-family: 'Gotham', sans-serif; 
+    font-size: 36px;
+    font-weight: 600; 
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+.author {
+    font-size: 18px;
+    font-style: italic;
+    position: relative; 
+    top: -50px; 
+    text-align: left;
+    margin-left: -190px;
+}
+
+
