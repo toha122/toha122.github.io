@@ -295,7 +295,7 @@ nav ul li a {
         padding: 4px 20px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start; 
         z-index: 100;
     }
 
@@ -304,8 +304,8 @@ nav ul li a {
         font-weight: bold;
         color: white;
         text-decoration: none;
-    }
-
+    } 
+}
     nav ul {
         list-style: none;
         display: flex;
