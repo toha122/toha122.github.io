@@ -34,14 +34,14 @@ h1 {
 #add-btn {
     padding: 10px 15px;
     border: none;
-    background-color: #28a745;
+    background-color: #69706b;
     color: white;
     border-radius: 4px;
     cursor: pointer;
 }
 
 #add-btn:hover {
-    background-color: #218838;
+    background-color: #888888;
 }
 
 ul {
