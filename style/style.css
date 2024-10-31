@@ -12,7 +12,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.534);
     padding: 10px 40px;
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 .btn1 {
-    padding: 1px 30px;
+    padding: 1px -0px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -304,4 +304,193 @@ nav ul li a {
     font-size: 3rem;
     color: #555;
     margin-top: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 1000px) {
+
+    body {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        margin: 10px 0 0 0;
+        gap: 15px;
+        font-size: 1rem;
+
+    }
+
+    nav ul li {
+        margin: 0px 20px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        text-align: center;
+
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero h1,
+    .hero p {
+        font-size: 2.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn1 {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .btn2 {
+        display: inline-block;
+        margin: 10px -20px;
+    }
+
+    /* About */
+    .about {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    /* Skills */
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-content .profile-img {
+        width: 85%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .skills-details {
+        width: 120%;
+        margin-bottom: 90px;
+    }
+
+    .skills-details ul {
+        display: none;
+    }
+
+
+    .progress-container {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .skills-details ul li {
+        position: relative;
+    }
+
+    .skills-details ul li:nth-child(2) .progress-container {
+        display: block;
+    }
+
+    .skills-details ul li:nth-child(3) .progress-container {
+        display: block;
+    }
+
+    .skills-details ul li:nth-child(4) .progress-container {
+        display: block;
+    }
+
+    .skills-details ul li:nth-child(5) .progress-container {
+        display: block;
+    }
+
+    .progress {
+        background-color: #83b3c3;
+        border-radius: 5px;
+        height: 14px;
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background-color: #498a99;
+        border-radius: 7px;
+        transition: width 1s ease-in-out;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .portfolio h2 {
+        font-size: 2rem;
+        margin-top: 90px;
+    }
+
+    .portfolio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-description,
+    .portfolio-gallery {
+        max-width: 100%;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 20px;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-content {
+        text-align: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .social-links p {
+        font-size: 1.5rem;
+
+    }
+
+    .tools {
+        font-size: 2rem;
+
+        margin-top: 10px;
+    }
 }
