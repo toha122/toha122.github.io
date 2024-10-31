@@ -2,9 +2,9 @@ window.onload = function () {
     const progressBars = document.querySelectorAll('.progress-fill');
     progressBars.forEach(bar => {
         const width = bar.style.width;
-        bar.style.width = '0'; 
+        bar.style.width = '0';
         setTimeout(() => {
-            bar.style.width = width; 
+            bar.style.width = width;
         }, 500);
     });
 };
@@ -19,7 +19,3 @@ document.querySelectorAll('a[data-section]').forEach(link => {
         }
     });
 });
-
-function toggleMenu() {
-    document.querySelector('.nav').classList.toggle('active'); 
-}
