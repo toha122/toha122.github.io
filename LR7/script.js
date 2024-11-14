@@ -66,7 +66,7 @@ document.getElementById('language-selector').addEventListener('change', function
     i18next.changeLanguage(selectedLanguage, updateContent);
 });
 
-const baseURL = "https://your-username.github.io/your-repo-name/locales/";
+const baseURL = "https://github.com/toha122/toha122.github.io/tree/main/LR7/locales";
 
 async function loadLanguage(lang) {
     try {
