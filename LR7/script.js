@@ -65,3 +65,16 @@ document.getElementById('language-selector').addEventListener('change', function
     const selectedLanguage = this.value;
     i18next.changeLanguage(selectedLanguage, updateContent);
 });
+
+const baseURL = "https://your-username.github.io/your-repo-name/locales/";
+
+async function loadLanguage(lang) {
+    try {
+        const response = await fetch(`${baseURL}${lang}.json`);
+        const translations = await response.json();
+        updateText(translations);
+    } catch (error) {
+        console.error("Error loading translation:", error);
+    }
+}
+
