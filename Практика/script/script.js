@@ -3,8 +3,8 @@ const SIZE = 9;
 var main_section = document.getElementById("tbl");
 
 for (var i = 1; i <= SIZE; i++) {
-    var row = document.createElement("div"); //<div></div>
-    row.setAttribute("class", "row"); // diw class="row"></div>
+    var row = document.createElement("div"); 
+    row.setAttribute("class", "row"); 
 
     for (var j = 1; j <= SIZE; j++) {
         var cell = document.createElement("div");
