@@ -1,8 +1,7 @@
-
 const map = L.map('map').setView([48.9171, 24.7158], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright"></a> contributors'
 }).addTo(map);
 
 function addMarker(lat, lng, message) {
@@ -31,8 +30,9 @@ document.getElementById('scroll-btn').addEventListener('click', () => {
     const lng = parseFloat(document.getElementById('lng-input').value);
 
     if (!isNaN(lat) && !isNaN(lng)) {
+        const time = new Date().toLocaleTimeString();
         map.setView([lat, lng], 13);
-        addMarker(lat, lng, `Destination: ${lat}, ${lng}`);
+        addMarker(lat, lng, `Coordinates: ${lat}, ${lng}<br>Time: ${time}`);
     } else {
         alert('Please enter valid coordinates.');
     }
