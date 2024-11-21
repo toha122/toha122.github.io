@@ -1,36 +1,40 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Wherever you go, there you are</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
         #map {
-            height: 400px;
+            height: 500px;
             width: 100%;
+            margin: 20px 0;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div id="location">
-        Your location will go here.
-    </div>
-    <div id="distance">
-        Distance from College will go here.
-    </div>
+
     <div id="map"></div>
-    <form>
-        <input type="button" id="watch" value="Watch me">
-        <input type="button" id="clearWatch" value="Clear watch">
-    </form>
-    <label>Enter destination coordinates:</label>
-    <input type="text" id="destinationLat" placeholder="Latitude">
-    <input type="text" id="destinationLng" placeholder="Longitude">
-    <input type="button" id="goToDestination" value="Go to Destination">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <div class="input-container">
+        <input type="text" id="lat-input" placeholder="Enter Latitude" />
+        <input type="text" id="lng-input" placeholder="Enter Longitude" />
+        <button id="scroll-btn">Go to Location</button>
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
