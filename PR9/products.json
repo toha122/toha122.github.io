@@ -1,0 +1,103 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": {
+                "uk": "Футбольний м'яч Adidas OCEAUNZ",
+                "en": "Football Ball Adidas OCEAUNZ"
+            },
+            "category": {
+                "uk": "Подарунок",
+                "en": "Gift"
+            },
+            "price": {
+                "new": null
+            },
+            "badge": {
+                "color": "green",
+                "label": {
+                    "uk": "Новинка",
+                    "en": "New"
+                }
+            },
+            "image": "images/images1.jpg",
+            "status": {
+                "uk": "Незабаром у продажі",
+                "en": "Coming Soon"
+            }
+        },
+        {
+            "id": 2,
+            "name": {
+                "uk": "Набори футбольних конусів",
+                "en": "Football Cone Sets"
+            },
+            "category": {
+                "uk": "Тренажерне обладнання",
+                "en": "Training Equipment"
+            },
+            "price": {
+                "new": 190,
+                "old": 210
+            },
+            "badge": null,
+            "image": "images/image7.png",
+            "status": {
+                "uk": "У кошик",
+                "en": "Add to Cart"
+            }
+        },
+        {
+            "id": 3,
+            "name": {
+                "uk": "Щитки футбольні SPORTS SP-Sport",
+                "en": "Football Shin Guards SPORTS SP-Sport"
+            },
+            "category": {
+                "uk": "Захист",
+                "en": "Protection"
+            },
+            "price": {
+                "new": 95
+            },
+            "badge": {
+                "color": "blue",
+                "label": {
+                    "uk": "Хіт продажів",
+                    "en": "Bestseller"
+                }
+            },
+            "image": "images/images3.png",
+            "status": {
+                "uk": "У кошик",
+                "en": "Add to Cart"
+            }
+        },
+        {
+            "id": 4,
+            "name": {
+                "uk": "Гетри футбольні SPOINT CO-3257",
+                "en": "Football Socks SPOINT CO-3257"
+            },
+            "category": {
+                "uk": "Одяг",
+                "en": "Clothing"
+            },
+            "price": {
+                "new": 100
+            },
+            "badge": {
+                "color": "blue",
+                "label": {
+                    "uk": "Хіт продажів",
+                    "en": "Bestseller"
+                }
+            },
+            "image": "images/images4.png",
+            "status": {
+                "uk": "У кошик",
+                "en": "Add to Cart"
+            }
+        }
+    ]
+}
